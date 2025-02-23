@@ -1,0 +1,86 @@
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+  color: #49557e;  
+  border: 1px solid blueviolet;
+  padding: 10px 30px ;
+  border-radius: 50px;
+  cursor: pointer;
+transition: 0.3s;
+}
+.navbar button:hover{
+background-color: #fff4f2;
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar{
+ display: flex; 
+ padding: 20px 0; 
+ justify-content: space-between;
+ align-items: center;
+
+}
+.navbar .img{
+max-width: 150px;
+}
+.navbar .right{
+    display: flex; 
+    align-items: center;
+     gap: 40px;
+}
+ .navbar .relative {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar  .notification {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: rgb(201, 27, 27); /* Equivalent to Tailwind's bg-red-900 */
+    border-radius: 9999px; /* Equivalent to rounded-xl */
+    top: -8px;
+    right: -8px;
+}
+.navbarprofile{
+
+   position: relative; 
+ } 
+.navprofiledrop{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbarprofile:hover .navprofiledrop{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 12px 25px;
+    border-radius: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+
+
+}
+.navprofiledrop li{
+   display: flex; 
+   align-items: center;
+   gap: 10px;
+   cursor: pointer;
+
+}
+.navprofiledrop img{
+    width: 20px;
+}
+.navprofiledrop li:hover{
+    color: tomato;
+}
